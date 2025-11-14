@@ -101,3 +101,41 @@ initially i found it a bit confusing. So if you also feel the same then this gui
 
 
 With this our project is converted into typescript.
+
+
+**SAMPLE tsconfig.json**
+
+Below is a minimal config file, there are many configs present apart from these ones, which can be added as per use case.
+
+```
+{
+  "compilerOptions": {
+    "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+
+    /* Modules */
+    "module": "commonjs",                                /* Specify what module code is generated. */
+    "moduleResolution": "node",                       /* Specify how TypeScript looks up a file from a given module specifier. */
+
+    /* JavaScript Support */
+    "allowJs": true,                                  /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */
+
+    /* Emit */
+    "declaration": true,                              /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
+    "declarationMap": true,                           /* Create sourcemaps for d.ts files. */
+    "emitDeclarationOnly": true,                      /* Only output d.ts files and not JavaScript files. */
+    "outDir": "dist",                                   /* Specify an output folder for all emitted files. */
+    
+    /* Interop Constraints */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+
+    /* Type Checking */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    
+    /* Completeness */
+    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+  },
+  "include": ["src/**/*"]
+}
+
+```
