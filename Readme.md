@@ -31,7 +31,7 @@ initially i found it a bit confusing. So if you also feel the same then this gui
 * Our next step is to create a **tsconfig.json** file in our root folder
 
   ```
-  tsc --init
+  npx tsc --init
   ```
 
   Which can be done by this cmd.
